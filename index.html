@@ -1,18 +1,472 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PromeG — VR Trackers</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROMEG – Bezprzewodowe Trackery Ruchu IMU do VRChat i PCVR</title>
+    <meta name="description" content="PROMEG – profesjonalne bezprzewodowe trackery ruchu IMU do Full-Body Tracking w VRChat i PCVR. Bez baz, bez kabli. Zestaw 6 trackerów za 990 PLN.">
+    <meta property="og:title" content="PROMEG – Bezprzewodowe Trackery IMU do VRChat">
+    <meta property="og:description" content="Pełne śledzenie ciała w VR bez kabli i baz. Zestaw 6 trackerów IMU za 990 PLN z dostawą InPost.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://promeg.pl">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎮</text></svg>">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-  <main>
-    <h1>PromeG</h1>
-    <p>VR motion tracking, made for immersion.</p>
-    <p>We are building physical VR trackers and accessories.</p>
-    <a href="https://buy.stripe.com/cNi8wI0d4bUd7PX8L58Vi02" target="_blank" class="btn-buy">But (990 zł)</a>
-    <p>Coming soon.</p>
-  </main>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container navbar__inner">
+            <a href="#" class="navbar__logo">
+                <span class="navbar__logo-icon">&#9670;</span> PROMEG
+            </a>
+            <button class="navbar__toggle" aria-label="Otwórz menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="navbar__links">
+                <li><a href="#zalety">Zalety</a></li>
+                <li><a href="#produkt">Produkt</a></li>
+                <li><a href="#specyfikacja">Specyfikacja</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="https://buy.stripe.com/cNi8wI0d4bUd7PX8L58Vi02" target="_blank" class="btn btn--small">Kup Teraz</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="hero__bg-glow"></div>
+        <div class="hero__particles" aria-hidden="true">
+            <span class="particle"></span>
+            <span class="particle"></span>
+            <span class="particle"></span>
+            <span class="particle"></span>
+            <span class="particle"></span>
+            <span class="particle"></span>
+        </div>
+        <div class="container hero__content reveal">
+            <div class="hero__badge">🎮 Full-Body Tracking dla VRChat</div>
+            <h1 class="hero__title">Wznieś swój VRChat<br>na wyższy poziom z <span class="highlight">PROMEG</span></h1>
+            <p class="hero__subtitle">Bezprzewodowe trackery ruchu IMU do Full-Body Tracking. Bez baz. Bez kabli. Pełna swoboda w VR.</p>
+            <div class="hero__cta">
+                <a href="#zestaw" class="btn btn--primary btn--large">Zamów Zestaw (990 PLN)</a>
+                <a href="#zalety" class="btn btn--outline btn--large">Dowiedz się więcej</a>
+            </div>
+            <!-- Stats -->
+            <div class="hero__stats">
+                <div class="stat">
+                    <span class="stat__number" data-target="6">0</span>
+                    <span class="stat__label">Trackerów w zestawie</span>
+                </div>
+                <div class="stat">
+                    <span class="stat__number" data-target="10" data-suffix="h+">0</span>
+                    <span class="stat__label">Czas pracy baterii</span>
+                </div>
+                <div class="stat">
+                    <span class="stat__number" data-target="20" data-suffix="ms">0</span>
+                    <span class="stat__label">Opóźnienie IMU</span>
+                </div>
+                <div class="stat">
+                    <span class="stat__number" data-target="2" data-suffix=" lata">0</span>
+                    <span class="stat__label">Gwarancji</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Bar -->
+    <section class="trust-bar">
+        <div class="container">
+            <div class="trust-bar__inner">
+                <div class="trust-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                    <span>Gwarancja 2 lata</span>
+                </div>
+                <div class="trust-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
+                    <span>Bezpieczne płatności Stripe</span>
+                </div>
+                <div class="trust-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+                    <span>Szybka wysyłka InPost</span>
+                </div>
+                <div class="trust-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                    <span>Kompatybilne z SlimeVR</span>
+                </div>
+                <div class="trust-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="1 4 1 10 7 10"/><path d="M3.51 15a9 9 0 1 0 2.13-9.36L1 10"/></svg>
+                    <span>14 dni na zwrot</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Zalety -->
+    <section id="zalety" class="features">
+        <div class="container">
+            <h2 class="section__title reveal">Dlaczego <span class="highlight">PROMEG</span>?</h2>
+            <p class="section__subtitle reveal">Nasze trackery zostały zaprojektowane z myślą o graczach VRChat, którzy chcą pełnej swobody ruchu.</p>
+            <div class="features__grid">
+                <div class="feature-card reveal">
+                    <div class="feature-card__icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+                    </div>
+                    <h3 class="feature-card__title">Błyskawiczna reakcja</h3>
+                    <p class="feature-card__text">Niskie opóźnienie IMU (~20ms) zapewnia natychmiastowe odwzorowanie Twoich ruchów w świecie VR bez zauważalnego lagu.</p>
+                    <div class="feature-card__tag">~20ms latency</div>
+                </div>
+                <div class="feature-card reveal">
+                    <div class="feature-card__icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="6" width="18" height="12" rx="2"/><line x1="23" y1="13" x2="23" y2="11"/></svg>
+                    </div>
+                    <h3 class="feature-card__title">Długi czas pracy</h3>
+                    <p class="feature-card__text">Wydajna bateria pozwala na 10+ godzin ciągłej pracy – grasz cały dzień bez przerw na ładowanie.</p>
+                    <div class="feature-card__tag">10h+ baterii</div>
+                </div>
+                <div class="feature-card reveal">
+                    <div class="feature-card__icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.55a11 11 0 0 1 14.08 0"/><path d="M1.42 9a16 16 0 0 1 21.16 0"/><path d="M8.53 16.11a6 6 0 0 1 6.95 0"/><line x1="12" y1="20" x2="12.01" y2="20"/></svg>
+                    </div>
+                    <h3 class="feature-card__title">Pełna swoboda</h3>
+                    <p class="feature-card__text">Bezprzewodowa łączność eliminuje kable i zewnętrzne bazy – ruszaj się swobodnie w każdym kierunku bez ograniczeń.</p>
+                    <div class="feature-card__tag">0 kabli</div>
+                </div>
+                <div class="feature-card reveal">
+                    <div class="feature-card__icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                    </div>
+                    <h3 class="feature-card__title">Gwarancja 2 lata</h3>
+                    <p class="feature-card__text">Pełna gwarancja producenta na 2 lata. Ustawowy zwrot w ciągu 14 dni od otrzymania przesyłki – bez podania przyczyny.</p>
+                    <div class="feature-card__tag">Pełna ochrona</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Produkt - Galeria -->
+    <section id="produkt" class="product-gallery">
+        <div class="container">
+            <h2 class="section__title reveal">Tracker VR <span class="highlight">PROMEG</span></h2>
+            <p class="section__subtitle reveal">Kompaktowy, lekki i wygodny – zaprojektowany do wielogodzinnych sesji w VR.</p>
+            <div class="gallery__grid reveal">
+                <div class="gallery__item gallery__item--main">
+                    <div class="gallery__placeholder">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+                        <span>Zdjęcie produktu wkrótce</span>
+                    </div>
+                </div>
+                <div class="gallery__item">
+                    <div class="gallery__placeholder gallery__placeholder--small">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+                        <span>Tracker z bliska</span>
+                    </div>
+                </div>
+                <div class="gallery__item">
+                    <div class="gallery__placeholder gallery__placeholder--small">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+                        <span>Paski montażowe</span>
+                    </div>
+                </div>
+                <div class="gallery__item">
+                    <div class="gallery__placeholder gallery__placeholder--small">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+                        <span>Cały zestaw</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Specyfikacja / Zestaw -->
+    <section id="specyfikacja" class="product">
+        <div class="container">
+            <h2 class="section__title reveal">Specyfikacja zestawu</h2>
+            <p class="section__subtitle reveal">Wszystko, czego potrzebujesz do FBT w jednym pudełku.</p>
+            <div class="product__wrapper reveal" id="zestaw">
+                <div class="product__info">
+                    <h3 class="product__name">Zestaw 6x Tracker VR PROMEG</h3>
+                    <p class="product__description">Kompletny zestaw do Full-Body Tracking w VRChat i PCVR. Podłącz, skalibruj i ciesz się pełnym śledzeniem ciała – stopy, kolana, biodra. Kompatybilny z SlimeVR i SteamVR.</p>
+                    <ul class="product__list">
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                            6 trackerów IMU PROMEG
+                        </li>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                            Elastyczne paski montażowe do ciała
+                        </li>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                            Kable do ładowania USB-C
+                        </li>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                            Instrukcja konfiguracji krok po kroku
+                        </li>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                            Wsparcie techniczne na Discord
+                        </li>
+                    </ul>
+                    <div class="product__warranty">
+                        <div class="warranty-badge">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                            <div>
+                                <strong>Pełna gwarancja 2 lata</strong>
+                                <span>Zwrot towaru w ciągu 14 dni od otrzymania przesyłki (zgodnie z prawem konsumenckim)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product__purchase">
+                    <div class="price-box">
+                        <div class="price-box__badge">Najczęściej wybierany</div>
+                        <span class="price-box__label">Cena zestawu</span>
+                        <span class="price-box__price">990 <small>PLN</small></span>
+                        <a href="https://buy.stripe.com/cNi8wI0d4bUd7PX8L58Vi02" target="_blank" class="btn btn--primary btn--full btn--glow">Zamów Teraz</a>
+                        <div class="price-box__info">
+                            <p class="price-box__payments">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
+                                Bezpieczne płatności: Karta, BLIK, Apple Pay, Klarna
+                            </p>
+                            <p class="price-box__shipping">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+                                Wysyłka InPost: Paczkomat lub Kurier
+                            </p>
+                            <p class="price-box__guarantee">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                                Gwarancja 2 lata + 14 dni na zwrot
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="faq">
+        <div class="container">
+            <h2 class="section__title reveal">Najczęściej zadawane pytania</h2>
+            <p class="section__subtitle reveal">Masz pytania? Znajdź odpowiedzi poniżej.</p>
+            <div class="faq__list reveal">
+                <details class="faq__item">
+                    <summary class="faq__question">
+                        Czy trackery PROMEG działają z VRChat?
+                        <span class="faq__icon">+</span>
+                    </summary>
+                    <div class="faq__answer">
+                        <p>Tak! Trackery PROMEG są w pełni kompatybilne z VRChat, NeosVR/Resonite, ChilloutVR i każdą inną aplikacją obsługującą SteamVR. Działają przez protokół SlimeVR.</p>
+                    </div>
+                </details>
+                <details class="faq__item">
+                    <summary class="faq__question">
+                        Ile trackerów potrzebuję do Full-Body Tracking?
+                        <span class="faq__icon">+</span>
+                    </summary>
+                    <div class="faq__answer">
+                        <p>Nasz zestaw zawiera 6 trackerów – to optymalna liczba dla pełnego FBT (stopy, kolana, biodra). Pozwala to na precyzyjne śledzenie dolnej części ciała, co jest standardem w VRChat.</p>
+                    </div>
+                </details>
+                <details class="faq__item">
+                    <summary class="faq__question">
+                        Czy potrzebuję bazowych stacji (base stations)?
+                        <span class="faq__icon">+</span>
+                    </summary>
+                    <div class="faq__answer">
+                        <p>Nie! To największa zaleta trackerów IMU – działają w pełni bezprzewodowo i nie wymagają żadnych zewnętrznych baz ani kamer. Wystarczy Wi-Fi.</p>
+                    </div>
+                </details>
+                <details class="faq__item">
+                    <summary class="faq__question">
+                        Jak wygląda konfiguracja?
+                        <span class="faq__icon">+</span>
+                    </summary>
+                    <div class="faq__answer">
+                        <p>Konfiguracja jest prosta: podłączasz trackery do Wi-Fi przez aplikację SlimeVR, wykonujesz kalibrację i gotowe. Cały proces zajmuje około 5-10 minut. Dołączamy instrukcję krok po kroku.</p>
+                    </div>
+                </details>
+                <details class="faq__item">
+                    <summary class="faq__question">
+                        Jaka jest gwarancja i polityka zwrotów?
+                        <span class="faq__icon">+</span>
+                    </summary>
+                    <div class="faq__answer">
+                        <p>Oferujemy pełną gwarancję producenta na 2 lata od daty zakupu. Dodatkowo, zgodnie z polskim prawem konsumenckim, masz 14 dni od otrzymania przesyłki na zwrot towaru bez podania przyczyny. Wystarczy odesłać produkt w stanie nienaruszonym.</p>
+                    </div>
+                </details>
+                <details class="faq__item">
+                    <summary class="faq__question">
+                        Jakie metody płatności akceptujecie?
+                        <span class="faq__icon">+</span>
+                    </summary>
+                    <div class="faq__answer">
+                        <p>Akceptujemy karty płatnicze (Visa, Mastercard), BLIK, Apple Pay, Google Pay oraz Klarnę (płatności ratalne). Wszystkie transakcje są zabezpieczone przez Stripe.</p>
+                    </div>
+                </details>
+                <details class="faq__item">
+                    <summary class="faq__question">
+                        Jak szybko otrzymam przesyłkę?
+                        <span class="faq__icon">+</span>
+                    </summary>
+                    <div class="faq__answer">
+                        <p>Zamówienia wysyłamy w ciągu 24h przez InPost. Możesz wybrać dostawę do Paczkomatu (1-2 dni) lub kurierem pod drzwi (1-2 dni robocze).</p>
+                    </div>
+                </details>
+                <details class="faq__item">
+                    <summary class="faq__question">
+                        Czy trackery są kompatybilne z Quest 2/3?
+                        <span class="faq__icon">+</span>
+                    </summary>
+                    <div class="faq__answer">
+                        <p>Trackery PROMEG działają z aplikacjami PCVR (przez SteamVR). Jeśli używasz Quest z kablem Link lub Air Link do gier PCVR (w tym VRChat na PC) – tak, są w pełni kompatybilne. Na standalone Quest (bez PC) nie zadziałają.</p>
+                    </div>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Final -->
+    <section class="cta-final">
+        <div class="container">
+            <div class="cta-final__inner reveal">
+                <h2 class="cta-final__title">Gotowy na Full-Body Tracking?</h2>
+                <p class="cta-final__text">Dołącz do setek graczy VRChat, którzy już korzystają z trackerów PROMEG. Pełna gwarancja 2 lata i 14 dni na zwrot.</p>
+                <a href="https://buy.stripe.com/cNi8wI0d4bUd7PX8L58Vi02" target="_blank" class="btn btn--primary btn--large btn--glow">Zamów Zestaw za 990 PLN</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer__inner">
+            <div class="footer__brand">
+                <span class="footer__logo"><span class="navbar__logo-icon">&#9670;</span> PROMEG</span>
+                <p class="footer__tagline">Bezprzewodowe trackery IMU do VR</p>
+            </div>
+            <div class="footer__nav">
+                <div class="footer__links">
+                    <span class="footer__links-title">Nawigacja</span>
+                    <a href="#zalety">Zalety</a>
+                    <a href="#produkt">Produkt</a>
+                    <a href="#specyfikacja">Specyfikacja</a>
+                    <a href="#faq">FAQ</a>
+                </div>
+                <div class="footer__links">
+                    <span class="footer__links-title">Social Media</span>
+                    <a href="https://instagram.com/promeg.pl" target="_blank" rel="noopener">Instagram</a>
+                    <a href="#" class="footer__link--soon">TikTok <span class="badge-soon">wkrótce</span></a>
+                </div>
+                <div class="footer__links">
+                    <span class="footer__links-title">Informacje</span>
+                    <a href="#zestaw">Zamów zestaw</a>
+                    <span class="footer__info-text">Gwarancja 2 lata</span>
+                    <span class="footer__info-text">14 dni na zwrot</span>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p class="footer__copy">&copy; 2024–2026 PROMEG. Wszelkie prawa zastrzeżone.</p>
+                <div class="footer__social">
+                    <a href="https://instagram.com/promeg.pl" target="_blank" rel="noopener" aria-label="Instagram" class="footer__social-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const toggle = document.querySelector('.navbar__toggle');
+        const navLinks = document.querySelector('.navbar__links');
+        toggle.addEventListener('click', () => {
+            const expanded = toggle.getAttribute('aria-expanded') === 'true';
+            toggle.setAttribute('aria-expanded', !expanded);
+            navLinks.classList.toggle('active');
+            toggle.classList.toggle('active');
+        });
+
+        // Close menu on link click
+        document.querySelectorAll('.navbar__links a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+                toggle.classList.remove('active');
+                toggle.setAttribute('aria-expanded', 'false');
+            });
+        });
+
+        // Scroll reveal animation
+        const revealElements = document.querySelectorAll('.reveal');
+        const revealObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('revealed');
+                    revealObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+
+        revealElements.forEach(el => revealObserver.observe(el));
+
+        // Animated counter
+        const statNumbers = document.querySelectorAll('.stat__number[data-target]');
+        const counterObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const el = entry.target;
+                    const target = parseInt(el.dataset.target);
+                    const suffix = el.dataset.suffix || '';
+
+                    let current = 0;
+                    const increment = Math.max(target / 30, 0.5);
+                    const timer = setInterval(() => {
+                        current += increment;
+                        if (current >= target) {
+                            current = target;
+                            clearInterval(timer);
+                        }
+                        el.textContent = Math.floor(current) + suffix;
+                    }, 40);
+
+                    counterObserver.unobserve(el);
+                }
+            });
+        }, { threshold: 0.5 });
+
+        statNumbers.forEach(el => counterObserver.observe(el));
+
+        // Navbar background on scroll
+        const navbar = document.querySelector('.navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('navbar--scrolled');
+            } else {
+                navbar.classList.remove('navbar--scrolled');
+            }
+        });
+
+        // Smooth stagger animation for feature cards
+        const featureCards = document.querySelectorAll('.feature-card');
+        const cardObserver = new IntersectionObserver((entries) => {
+            entries.forEach((entry, index) => {
+                if (entry.isIntersecting) {
+                    setTimeout(() => {
+                        entry.target.classList.add('revealed');
+                    }, index * 150);
+                    cardObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.1 });
+
+        featureCards.forEach(card => cardObserver.observe(card));
+    </script>
+
 </body>
 </html>
