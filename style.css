@@ -219,22 +219,9 @@ img {
 }
 
 .navbar__links {
-        position: fixed;
-        top: 72px;
-        left: 0;
-        right: 0;
-        height: calc(100vh - 72px);
-        height: calc(100dvh - 72px);
-        background: rgba(11, 15, 25, 0.98);
-        backdrop-filter: blur(16px);
-        -webkit-backdrop-filter: blur(16px);
-        flex-direction: column;
-        padding: 40px 24px;
-        gap: 28px;
-        transform: translateX(100%);
-        opacity: 0;
-        pointer-events: none;
-        transition: all var(--transition);
+    display: flex;
+    align-items: center;
+    gap: 32px;
 }
 
 .navbar__links li a {
@@ -1062,7 +1049,8 @@ img {
         top: 72px;
         left: 0;
         right: 0;
-        bottom: 0;
+        height: calc(100vh - 72px);
+        height: calc(100dvh - 72px);
         background: rgba(11, 15, 25, 0.98);
         backdrop-filter: blur(16px);
         -webkit-backdrop-filter: blur(16px);
